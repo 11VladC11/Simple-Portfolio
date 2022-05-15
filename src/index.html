@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Irina Cojocaru"
+	})
+	<body>
+		<div class="page-loader">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="main ">
+					@@include('html/_heading.html',{})
+					@@include('html/_home.html',{})
+					@@include('html/_about.html',{})
+					@@include('html/_portfolio.html',{})
+					@@include('html/_contact.html',{})
+				</div>
+				@@include('html/_popup.html',{})
+				</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
