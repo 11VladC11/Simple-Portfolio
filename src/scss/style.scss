@@ -161,6 +161,29 @@ body {
 	}
 }
 
+.video-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -111;
+	.video-container{
+background-color: rgba(0, 0, 0, 0.291);
+		video{
+mix-blend-mode: darken;			// width: 100vw;
+			height: 100vh;
+			@media (min-width:1050px) {
+				width: 100vw;
+				height: auto;
+			}
+		}
+		img{
+			height: 100vh;
+		}
+	}
+}
+
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";
